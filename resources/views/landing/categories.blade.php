@@ -1,4 +1,4 @@
-<!-- Categories Section -->
+
     <section id="categorias" class="py-24 gradient-subtle scroll-animate">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -9,7 +9,7 @@
                     Explore por categoria
                 </h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Mais de 350 locais cadastrados em Manaus com informações detalhadas sobre acessibilidade
+               Projeto em desenvolvimento. Em breve teremos centenas de locais cadastrados em Manaus com informações detalhadas sobre acessibilidade
                 </p>
             </div>
 
@@ -35,8 +35,7 @@
                     </div>
                     <div class="flex-1">
                         <h3 class="text-lg font-semibold text-gray-900 mb-1">Praças e Parques</h3>
-                        <p class="text-2xl font-bold text-green-600">45+</p>
-                        <p class="text-sm text-gray-600">locais cadastrados</p>
+                    
                     </div>
                 </div>
 
@@ -48,8 +47,7 @@
                     </div>
                     <div class="flex-1">
                         <h3 class="text-lg font-semibold text-gray-900 mb-1">Shopping Centers</h3>
-                        <p class="text-2xl font-bold text-pink-600">28+</p>
-                        <p class="text-sm text-gray-600">locais cadastrados</p>
+                     
                     </div>
                 </div>
 
@@ -61,8 +59,7 @@
                     </div>
                     <div class="flex-1">
                         <h3 class="text-lg font-semibold text-gray-900 mb-1">Hospitais e Clínicas</h3>
-                        <p class="text-2xl font-bold text-blue-600">65+</p>
-                        <p class="text-sm text-gray-600">locais cadastrados</p>
+        
                     </div>
                 </div>
 
@@ -74,8 +71,7 @@
                     </div>
                     <div class="flex-1">
                         <h3 class="text-lg font-semibold text-gray-900 mb-1">Escolas e Universidades</h3>
-                        <p class="text-2xl font-bold text-green-600">52+</p>
-                        <p class="text-sm text-gray-600">locais cadastrados</p>
+           
                     </div>
                 </div>
 
@@ -87,10 +83,9 @@
                     </div>
                     <div class="flex-1">
                         <h3 class="text-lg font-semibold text-gray-900 mb-1">Hotéis e Pousadas</h3>
-                        <p class="text-2xl font-bold text-pink-600">35+</p>
-                        <p class="text-sm text-gray-600">locais cadastrados</p>
+                  
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>      

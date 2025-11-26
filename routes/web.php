@@ -4,7 +4,7 @@ use App\Http\Controllers\PlacesController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlacePublicController;
-use App\Http\Controllers\Api\ChartController;
+use App\Http\Controllers\HighchartsController;
 
 
 /*
@@ -22,9 +22,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -34,10 +33,7 @@ Route::middleware('auth')->group(function () {
 
 
 
-//ROTAS DE ADMIN FICARAO ASSIM:
-// Route::get('/teste',[gatescontroller::class,'teste'])
-// ->name('teste teste')
-// ->middleware('can:access');
+
 
 
 
@@ -53,11 +49,18 @@ Route::post('/locais/{place}/comentar', [PlacePublicController::class, 'comentar
     ->middleware('auth')
     ->name('places.public.comentar');
 
-Route::get('/charts/top-rated', [ChartController::class, 'topRatedPlaces']);
-Route::get('/charts/most-commented', [ChartController::class, 'mostCommentedPlaces']);
-Route::get('/charts/category-average', [ChartController::class, 'categoryAverageRatings']);
-Route::get('/charts/category-total', [ChartController::class, 'categoryTotalRatings']);
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+
+Route::prefix('highcharts')->group(function () {
+    Route::get('/top-rated', [HighchartsController::class, 'topRated']);
+    Route::get('/most-commented', [HighchartsController::class, 'mostCommented']);
+    Route::get('/category-average', [HighchartsController::class, 'categoryAverage']);
+    Route::get('/category-total', [HighchartsController::class, 'categoryTotal']);
+});
 
 
 
@@ -67,4 +70,3 @@ Route::get('/charts/category-total', [ChartController::class, 'categoryTotalRati
 
 
 require __DIR__ . '/auth.php';
-
