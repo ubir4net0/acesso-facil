@@ -4,10 +4,10 @@
 
 @section('content')
 
-{{-- ======================   HERO BEAUTIFUL   ====================== --}}
+
 <div class="relative w-full py-24 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white overflow-hidden">
 
-    {{-- Ornamentos --}}
+   
     <div class="absolute top-[-80px] right-[-80px] w-[260px] h-[260px] bg-white/20 rounded-full blur-3xl"></div>
     <div class="absolute bottom-[-80px] left-[-80px] w-[260px] h-[260px] bg-white/20 rounded-full blur-3xl"></div>
 
@@ -30,7 +30,7 @@
 
 
 
-{{-- ======================   BLOCO ESTATÍSTICAS   ====================== --}}
+
 <div class="px-6 md:px-12 lg:px-24 mt-16 mb-28">
 
     <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
@@ -40,7 +40,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
 
-        {{-- Card 1 --}}
+      
         <div class="glass-stat">
             <div class="title-stat">
                 <i class="fa-solid fa-star text-yellow-400"></i>
@@ -50,7 +50,7 @@
         </div>
 
 
-        {{-- Card 2 --}}
+      
         <div class="glass-stat">
             <div class="title-stat">
                 <i class="fa-solid fa-comments text-green-500"></i>
@@ -60,7 +60,7 @@
         </div>
 
 
-        {{-- Card 3 --}}
+        
         <div class="glass-stat">
             <div class="title-stat">
                 <i class="fa-solid fa-layer-group text-purple-500"></i>
@@ -70,7 +70,6 @@
         </div>
 
 
-        {{-- Card 4 --}}
         <div class="glass-stat">
             <div class="title-stat">
                 <i class="fa-solid fa-chart-column text-red-500"></i>
@@ -84,7 +83,7 @@
 
 
 
-{{-- ======================   ESTILOS   ====================== --}}
+
 <style>
     .glass-stat {
         @apply bg-white/40 backdrop-blur-xl p-8 rounded-2xl shadow-2xl border border-white/50
@@ -112,13 +111,13 @@
 
 
 
-{{-- ======================   HIGHCHARTS   ====================== --}}
+
 <script>
 async function loadChart(element, url, params = {}) {
     const res = await fetch(url);
     let data = await res.json();
 
-    // Corrigir pie chart (transformar labels + values em {name, y})
+    
     if (params.type === "pie") {
         data = data.labels.map((label, i) => ({
             name: label,

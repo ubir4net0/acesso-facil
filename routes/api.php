@@ -21,11 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
  
 
-Route::get('/charts/top-rated', [ChartController::class, 'topRatedPlaces']);
-Route::get('/charts/most-commented', [ChartController::class, 'mostCommentedPlaces']);
-Route::get('/charts/category-avg', [ChartController::class, 'categoryAverageRatings']);
-Route::get('/charts/category-total', [ChartController::class, 'categoryTotalRatings']);
-
 
 Route::get('/places', function () {
     return Place::with('categoria')->get();

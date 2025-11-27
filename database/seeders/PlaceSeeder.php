@@ -59,6 +59,8 @@ $locais = [
         'longitude' => -60.017694,
     ],
 
+     
+
     [
         'categoria' => 'Shopping',
         'nome' => 'Manauara Shopping',
@@ -146,15 +148,6 @@ $locais = [
                     'longitude' => $l['longitude'],
                 ]
             );
-
-            foreach (range(1, rand(3, 6)) as $i) {
-                Comment::create([
-                    'place_id' => $place->id,
-                    'user_id' => $usuariosIds[array_rand($usuariosIds)],
-                    'comentario' => fake()->sentence(12),
-                    'estrelas' => rand(3, 5),
-                ]);
-            }
         }
     }
 }
