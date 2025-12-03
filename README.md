@@ -144,7 +144,7 @@ npm run dev
 
 ## 👤 Autor
 
-Projeto desenvolvido por **Ubirajara Neto**  
+Projeto desenvolvido por **Ubirajara Neto** para a apresentação do InovaTech 2025, evento promovido pela universidade FAMETRO
 
  
 
