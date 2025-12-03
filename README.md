@@ -4,6 +4,7 @@ O **Acesso Fácil** é um sistema desenvolvido para promover acessibilidade urba
 A plataforma reúne informações sobre estabelecimentos, indicadores de acessibilidade, avaliações e comentários reais dos usuários.
 
 ![Tela Inicial](public/images/landing.png)
+![Inovatech](public/images/inovatech.jpg)
 
 O projeto inclui:
 - **Interface Web moderna** com TailwindCSS  
