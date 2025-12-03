@@ -77,4 +77,9 @@ class HighchartsController extends Controller
             'values' => $categories->pluck('total'),
         ]);
     }
+
+   
+
+
+
 }
